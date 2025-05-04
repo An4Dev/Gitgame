@@ -1,0 +1,27 @@
+[Linha de base]
+[Linha de base]
+[Linha de base]
+
+# Unity
+[Linha de base]
+Temp/
+Library/
+Logs/
+Build/
+Obj/
+MemoryCaptures/
+.userprefs
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
