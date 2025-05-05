@@ -7,7 +7,6 @@
     <title>RaiseApe</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    
   </head>
   <body class="dark">
     <div id="unity-container" class="unity-desktop">
@@ -23,7 +22,9 @@
       </div>
     </div>
     <div id="unity-fullscreen-button" style="display: none;"></div>
-    <script src="../event.js"></script>
+
+    <!-- Corrigido: caminho correto para o script -->
+    <script src="event.js"></script>
 
     <script>
       const hideFullScreenButton = true;
@@ -47,14 +48,14 @@
       const fullscreenButton = document.querySelector("#unity-fullscreen-button");
       const spinner = document.querySelector('.spinner');
 
-      const canFullscreen = (function() {
+      const canFullscreen = (function () {
         for (const key of [
-            'exitFullscreen',
-            'webkitExitFullscreen',
-            'webkitCancelFullScreen',
-            'mozCancelFullScreen',
-            'msExitFullscreen',
-          ]) {
+          'exitFullscreen',
+          'webkitExitFullscreen',
+          'webkitCancelFullScreen',
+          'mozCancelFullScreen',
+          'msExitFullscreen',
+        ]) {
           if (key in document) {
             return true;
           }
